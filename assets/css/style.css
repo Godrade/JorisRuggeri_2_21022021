@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --background: #F2F2F2;
+}
+
+a {
+    color: var(--blue);
+}

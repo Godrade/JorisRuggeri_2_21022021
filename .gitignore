@@ -1,4 +1,7 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+.idea/discord.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/Reservia.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/watcherTasks.xml
