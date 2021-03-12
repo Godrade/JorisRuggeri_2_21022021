@@ -4,25 +4,98 @@
     <!-- Settings -->
     <meta charset="UTF-8">
     <title>Reservia - Trouver vos hebergement de rêve !</title>
+    <link href="assets/images/logo/Reservia.svg" rel="icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous"/>
+    <link href="assets/css/grid.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Menu -->
 <header>
     <nav class="nav-bar">
-        <img src="assets/images/logo/Reservia@3x.png" alt="Logo Reservia">
+        <img src="assets/images/logo/Reservia.svg" alt="Logo Reservia">
         <div class="float-right">
             <ul>
                 <a href=""><li>Hébergements</li></a>
                 <a href=""><li>Activités</li></a>
-                <a href=""><li>S'inscrire</li></a>
+                <a href=""><li id="actif">S'inscrire</li></a>
             </ul>
         </div>
     </nav>
+    <!-- Filtre -->
+    <div class="container-filtre">
+        <div class="container-text-filtre">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <div class="select-ville">
+            <form>
+                <label for="search-ville">
+                    <div class="before-input"><i class="fas fa-map-marker-alt"></i></div>
+                    <input type="search" placeholder="Ville" id="search-ville">
+                    <button>Recherche</button>
+                </label>
+            </form>
+        </div>
+        <div class="filtre">
+            <p class="inline-block">Filtres</p>
+            <button><i class="fas fa-money-bill-wave"></i> Economique</button>
+            <button><i class="fas fa-child"></i> Familial</button>
+            <button><i class="fas fa-heart"></i> Romantique</button>
+            <button><i class="fas fa-dog"></i> Animaux autorisés</button>
+        </div>
+        <div class="info-text">
+            <div id="circle-info"><i class="fas fa-info"></i></div>
+            <p class="inline-block">Plus de 500 logements sont disponibles dans cette ville.</p>
+        </div>
+    </div>
 </header>
+<main>
+    <section class="grid-template-default">
+        <div class="container-logement-small">
+            <p>Hébergements à Marseille</p>
+            <div class="grid-template-logement">
+
+            </div>
+        </div>
+    </section>
+    <section class="grid-template-default">
+        <div class="container-logement-large">
+            <p>Activités à Marseille</p>
+            <div class="grid-template-logement">
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="container-footer">
+    <div class="grid-template-footer">
+        <div class="grid-item-footer">
+            <h5>A propos</h5>
+            <ul>
+                <li><a href="">Fonctionnement du site</a></li>
+                <li><a href="">Conditions gégérales de vente</a></li>
+                <li><a href="">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="grid-item-footer">
+            <h5>Nos hébergements</h5>
+            <ul>
+                <li><a href="">Charte qualité</a></li>
+                <li><a href="">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="grid-item-footer">
+            <h5>Assistance</h5>
+            <ul>
+                <li><a href="">Centre d'aide</a></li>
+                <li><a href="">Nous contacter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

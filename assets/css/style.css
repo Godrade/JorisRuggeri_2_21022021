@@ -1,11 +1,200 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import "variables.css";
 
-:root {
-    --blue: #0065FC;
-    --blue-light: #DEEBFF;
-    --background: #F2F2F2;
+body {
+    margin: 0;
+    font-family: Raleway, serif;
 }
 
-a {
+.float-right {
+    float: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+header, main {
+    margin: 0 30px 0 30px;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+/* MENU */
+#actif {
+    font-weight: 700;
     color: var(--blue);
+}
+
+header .nav-bar {
+    width: 100%;
+    height: 58px;
+}
+
+header img {
+    width: 100px;
+    position: relative;
+    top: 6px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: var(--tr02);
+    border-top: 2px solid transparent;
+}
+
+header ul a {
+    color: gray;
+}
+
+header ul a:hover {
+    color: var(--blue);
+    transition: var(--tr02);
+}
+
+header ul a:hover li {
+    border-top: 2px solid var(--blue);
+    transition: var(--tr02);
+}
+
+/* Filtres */
+
+.container-filtre {
+    margin-top: 30px;
+}
+
+.container-text-filtre h1 {
+    margin: 0 0 4px;
+    font-size: 1.4em;
+}
+
+.container-text-filtre p {
+    margin: 0 0 20px;
+}
+
+.before-input {
+    position: relative;
+    background-color: var(--background);
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.before-input i {
+    position: absolute;
+    left: 13px;
+    top: 10px;
+}
+
+.select-ville input {
+    height: 37px;
+    border: 1px solid var(--background);
+    padding-left: 10px;
+    position: relative;
+    right: 5px;
+    vertical-align: top;
+}
+
+.select-ville button {
+    transition: var(--tr02);
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 11px;
+    border-radius: 0 10px 10px 0;
+    vertical-align: top;
+}
+
+.select-ville button:hover {
+    transition: var(--tr02);
+    background-color: var(--blue-hover);
+}
+
+.filtre {
+    margin: 20px 0 20px 0;
+}
+
+.filtre button {
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--dark-gray);
+}
+
+#circle-info {
+    height: 30px;
+    width: 30px;
+    top: 11px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid var(--background);
+    border-radius: 50%;
+}
+
+#circle-info i {
+    color: var(--blue);
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+
+/* Logement */
+.container-logement-small {
+    background-color: var(--background);
+    grid-column: 1/5;
+    grid-row: 1/3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container-logement-large {
+    margin-top: 50px;
+    grid-column: 1/6;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/* Footer */
+.container-footer {
+    height: 185px;
+    background-color: var(--background);
+}
+
+.grid-item-footer {
+    width: 100%;
+    height: 185px;
+}
+
+.container-footer h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.container-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-footer li a {
+    color: black;
+    text-decoration: none;
 }

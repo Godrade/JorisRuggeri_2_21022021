@@ -1,0 +1,24 @@
+.grid-template-default {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    grid-gap: 30px;
+    grid-template-columns: repeat(6, 300px);
+    grid-template-rows: repeat(2, 300px);
+}
+
+.grid-template-logement {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.grid-template-footer {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 30%);
+}
