@@ -10,12 +10,12 @@
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous"/>
     <link href="assets/css/grid.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Menu -->
 <header>
-    <nav class="nav-bar">
+    <nav>
         <img src="assets/images/logo/Reservia.svg" alt="Logo Reservia">
         <div class="float-right">
             <ul>
@@ -25,22 +25,22 @@
             </ul>
         </div>
     </nav>
-    <!-- Filtre -->
-    <div class="container-filtre">
-        <div class="container-text-filtre">
+    <!-- Filter -->
+    <div class="container-filter">
+        <div class="container-text-filter">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="select-ville">
+        <div class="select-city">
             <form>
-                <label for="search-ville">
+                <label for="search-city">
                     <div class="before-input"><i class="fas fa-map-marker-alt"></i></div>
-                    <input type="search" placeholder="Ville" id="search-ville">
+                    <input type="search" placeholder="Ville" id="search-city">
                     <button>Recherche</button>
                 </label>
             </form>
         </div>
-        <div class="filtre">
+        <div class="filter">
             <p class="inline-block">Filtres</p>
             <button><i class="fas fa-money-bill-wave"></i> Economique</button>
             <button><i class="fas fa-child"></i> Familial</button>
@@ -54,13 +54,13 @@
     </div>
 </header>
 <main>
-    <section class="grid-template-default">
-        <div class="container-logement-small">
-            <p class="content-title">Hébergements à Marseille</p>
+    <section class="grid-template-housing">
+        <div class="container-housing">
+            <h2>Hébergements à Marseille</h2>
             <div class="list-housing">
-                <div class="item-housing">
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash">
+                        <img src="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Auberge la Cannebière</p>
@@ -73,10 +73,10 @@
                             <i class="fas fa-star stars-color-gray"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-housing">
+                </article>
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash">
+                        <img src="assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Hôtel du port</p>
@@ -89,10 +89,10 @@
                             <i class="fas fa-star stars-color-blue"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-housing">
+                </article>
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash">
+                        <img src="assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Hôtel Les mouettes</p>
@@ -105,10 +105,10 @@
                             <i class="fas fa-star stars-color-gray"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-housing">
+                </article>
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash">
+                        <img src="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Hôtel de la mer</p>
@@ -121,10 +121,10 @@
                             <i class="fas fa-star stars-color-gray"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-housing">
+                </article>
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash">
+                        <img src="assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Auberge Le Panier</p>
@@ -137,10 +137,10 @@
                             <i class="fas fa-star stars-color-gray"></i>
                         </div>
                     </div>
-                </div>
-                <div class="item-housing">
+                </article>
+                <article class="item-housing">
                     <div class="img-item-housing">
-                        <img src="assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash">
+                        <img src="assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                     </div>
                     <div class="housing-content-text">
                         <p class="housing-title">Hôtel chez Amina</p>
@@ -153,24 +153,74 @@
                             <i class="fas fa-star stars-color-blue"></i>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
             <p class="show">Afficher plus</p>
         </div>
-        <div class="container-logement-small">
-            <p class="content-title">Hébergements à Marseille</p>
+        <div class="container-housing">
+            <h2>Les plus populaires</h2>
+            <div class="list-housing">
+                <article class="item-popular">
+                    <div class="img-item-popular">
+                        <img src="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    </div>
+                    <div class="popular-content-text">
+                        <p class="housing-title">Auberge la Cannebière</p>
+                        <p class="housing-desc">Nuit à partir de <span>25€</span></p>
+                        <div class="popular-stars-content">
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="item-popular">
+                    <div class="img-item-popular">
+                        <img src="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                    </div>
+                    <div class="popular-content-text">
+                        <p class="housing-title">Auberge la Cannebière</p>
+                        <p class="housing-desc">Nuit à partir de <span>25€</span></p>
+                        <div class="popular-stars-content">
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-gray"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="item-popular">
+                    <div class="img-item-popular">
+                        <img src="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                    </div>
+                    <div class="popular-content-text">
+                        <p class="housing-title">Auberge la Cannebière</p>
+                        <p class="housing-desc">Nuit à partir de <span>25€</span></p>
+                        <div class="popular-stars-content">
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-blue"></i>
+                            <i class="fas fa-star stars-color-gray"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
-    <section class="">
-        <div class="container-logement-large">
-            <p class="content-title">Activités à Marseille</p>
-            <div class="grid-template-logement">
+    <section>
+        <div class="container-activity">
+            <h2>Activités à Marseille</h2>
+            <div class="grid-template-activity">
 
             </div>
         </div>
     </section>
 </main>
-<footer class="container-footer">
+<footer>
     <div class="grid-template-footer">
         <div class="grid-item-footer">
             <h5>A propos</h5>
