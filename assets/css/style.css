@@ -3,6 +3,10 @@ body {
     font-family: Raleway, serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .float-right {
     float: right;
 }
@@ -20,9 +24,17 @@ input:focus, button:focus {
 }
 
 /* MENU */
-#actif {
+#register {
     font-weight: 700;
     color: var(--blue);
+}
+
+#actif {
+    color: var(--blue);
+}
+
+#actif li {
+    border-top: 2px solid var(--blue);
 }
 
 header nav {
@@ -95,6 +107,7 @@ header ul a:hover li {
 }
 
 .select-city input {
+    font-weight: bold;
     height: 37px;
     border: 1px solid var(--background);
     padding-left: 10px;
@@ -126,12 +139,32 @@ header ul a:hover li {
     margin: 20px 0 20px 0;
 }
 
-.filter button {
-    height: 35px;
-    border-radius: 10px;
+.filter p {
+    margin-right: 40px;
     font-weight: bold;
+}
+
+.filter a {
+    color: black;
+    font-weight: bold;
+    height: 35px;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px 10px 55px;
+    border-radius: 20px;
+    position: relative;
     background-color: transparent;
     border: 1px solid var(--dark-gray);
+}
+
+.filter a i {
+    position: absolute;
+    background-color: rgb(195, 213, 241);
+    border-radius: 100%;
+    color: var(--blue);
+    left: -3px;
+    bottom: -1px;
+    padding: 13px;
 }
 
 #circle-info {
@@ -170,14 +203,6 @@ h2 {
     border-radius: 10px;
 }
 
-.container-activity {
-    margin-top: 50px;
-    grid-column: 1/6;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
 .list-housing {
     display: flex;
     flex-wrap: wrap;
@@ -195,14 +220,15 @@ h2 {
 .img-item-housing {
     height: 65%;
     overflow: hidden;
-    border: 4px solid white;
+    padding: 4px;
     border-radius: 10px 10px 0 0;
 }
 
 .item-housing img  {
     width: 100%;
-    height: 132%;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .housing-content-text {
@@ -233,19 +259,17 @@ h2 {
 
 /* Plus populaire */
 .item-popular {
-    flex: 1 1 99%;
     margin: 10px;
     height: 190px;
+    padding: 4px;
     border-radius: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.4) 4px 3px 10px;
 }
 
 .img-item-popular {
-    height: 96%;
+    height: 100%;
     width: 40%;
-    overflow: hidden;
-    border: 4px solid white;
     display: inline-block;
     border-radius: 10px 0 0 10px;
 }
@@ -253,6 +277,8 @@ h2 {
 .img-item-popular img {
     width: 100%;
     height: 100%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
 }
 
 .popular-content-text {
@@ -268,17 +294,46 @@ h2 {
     bottom: 5px;
 }
 
+/* Activity */
+.container-activity {
+    margin-top: 50px;
+    grid-column: 1/6;
+    padding: 30px;
+}
+
+.activity-title {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.activity-img {
+    height: 90%;
+}
+
+.activity-img-small {
+    height: 68%;
+}
+
+.activity-img-medium {
+    height: 80%;
+}
+
+.activity-img .activity-img-small .activity-img-medium, img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
 /* Footer */
 footer {
-    height: 185px;
     background-color: var(--background);
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 30%);
 }
-
-.grid-item-footer {
-    width: 100%;
-    height: 185px;
-}
-
 footer h5 {
     font-size: 20px;
     font-weight: bold;
@@ -288,6 +343,10 @@ footer h5 {
 footer ul {
     list-style-type: none;
     padding: 0;
+}
+
+footer ul li {
+    padding: 5px;
 }
 
 footer li a {

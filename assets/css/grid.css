@@ -7,20 +7,61 @@
 .grid-template-activity {
     display: grid;
     height: 600px;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.grid-template-footer {
+.grid-container {
     display: grid;
-    height: auto;
-    width: 100%;
-    grid-gap: 30px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 30%);
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 55px;
+    grid-column-gap: 30px;
+    grid-template-areas: "activity-one-big activity-one-small activity-two-big activity-three-small"
+                         "activity-one-big activity-two-small activity-two-big activity-four-small";
 }
 
-.activity {
-    grid-template-areas: "a b a b"
-                         "a c a c";
+.activity-one-big {
+    grid-area: activity-one-big;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+
+.activity-one-small {
+    grid-area: activity-one-small;
+    border-radius: 20px;
+    height: 120%;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+
+.activity-two-small {
+    grid-area: activity-two-small;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+
+.activity-two-big {
+    grid-area: activity-two-big;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+
+.activity-three-small {
+    grid-area: activity-three-small;
+    border-radius: 20px;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+}
+
+.activity-four-small {
+    grid-area: activity-four-small;
+    border-radius: 20px;
+    height: 110%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
 }

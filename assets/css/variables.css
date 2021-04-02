@@ -1,8 +1,12 @@
 :root {
+
+    /* Color */
     --blue: #0065fc;
     --blue-hover: #639fef;
     --blue-light: #DEEBFF;
-    --dark-gray: #9a9a9a;
+    --dark-gray: #c6c6c6;
     --background: #F2F2F2;
+
+    /* Transition */
     --tr02: 0.2s;
 }

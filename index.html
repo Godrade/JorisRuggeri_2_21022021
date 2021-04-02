@@ -19,9 +19,9 @@
         <img src="assets/images/logo/Reservia.svg" alt="Logo Reservia">
         <div class="float-right">
             <ul>
-                <a href=""><li>Hébergements</li></a>
-                <a href=""><li>Activités</li></a>
-                <a href=""><li id="actif">S'inscrire</li></a>
+                <a href="#housing" id="actif"><li>Hébergements</li></a>
+                <a href="#activity"><li>Activités</li></a>
+                <a href="#"><li id="register">S'inscrire</li></a>
             </ul>
         </div>
     </nav>
@@ -35,17 +35,17 @@
             <form>
                 <label for="search-city">
                     <div class="before-input"><i class="fas fa-map-marker-alt"></i></div>
-                    <input type="search" placeholder="Ville" id="search-city">
+                    <input type="search" placeholder="Ville" value="Marseille, France" id="search-city">
                     <button>Recherche</button>
                 </label>
             </form>
         </div>
         <div class="filter">
             <p class="inline-block">Filtres</p>
-            <button><i class="fas fa-money-bill-wave"></i> Economique</button>
-            <button><i class="fas fa-child"></i> Familial</button>
-            <button><i class="fas fa-heart"></i> Romantique</button>
-            <button><i class="fas fa-dog"></i> Animaux autorisés</button>
+            <a href="#"><i class="fas fa-money-bill-wave"></i> Économique</a>
+            <a href="#"><i class="fas fa-child"></i> Familial</a>
+            <a href="#"><i class="fas fa-heart"></i>  Romantique</a>
+            <a href="#"><i class="fas fa-dog"></i> Animaux autorisés</a>
         </div>
         <div class="info-text">
             <div id="circle-info"><i class="fas fa-info"></i></div>
@@ -54,7 +54,7 @@
     </div>
 </header>
 <main>
-    <section class="grid-template-housing">
+    <section class="grid-template-housing" id="housing">
         <div class="container-housing">
             <h2>Hébergements à Marseille</h2>
             <div class="list-housing">
@@ -211,39 +211,74 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="activity">
         <div class="container-activity">
             <h2>Activités à Marseille</h2>
             <div class="grid-template-activity">
-
+                <div class="grid-container">
+                    <div class="activity-one-big">
+                        <div class="activity-img">
+                            <img src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+                        </div>
+                        <p class="activity-title">Vieux Port</p>
+                    </div>
+                    <div class="activity-one-small">
+                        <!--<div class="activity-img">
+                            <img src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues">
+                        </div>-->
+                        <p class="activity-title">Fort de Pomègues</p>
+                    </div>
+                    <div class="activity-two-small">
+                        <div class="activity-img-small">
+                            <img src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du frioul">
+                        </div>
+                        <p class="activity-title">Îles du Frioul</p>
+                    </div>
+                    <div class="activity-two-big">
+                        <div class="activity-img">
+                            <img src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des calanques">
+                        </div>
+                        <p class="activity-title">Parc National des Calanques</p>
+                    </div>
+                    <div class="activity-three-small">
+                        <!--<div class="activity-img">
+                            <img src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde">
+                        </div>-->
+                        <p class="activity-title">Notre-Dame-de-la-Garde</p>
+                    </div>
+                    <div class="activity-four-small">
+                        <div class="activity-img-medium">
+                            <img src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        </div>
+                        <p class="activity-title">Parc Longchamp</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 <footer>
-    <div class="grid-template-footer">
-        <div class="grid-item-footer">
-            <h5>A propos</h5>
-            <ul>
-                <li><a href="">Fonctionnement du site</a></li>
-                <li><a href="">Conditions gégérales de vente</a></li>
-                <li><a href="">Données et confidentialité</a></li>
-            </ul>
-        </div>
-        <div class="grid-item-footer">
-            <h5>Nos hébergements</h5>
-            <ul>
-                <li><a href="">Charte qualité</a></li>
-                <li><a href="">Soumettre votre hôtel</a></li>
-            </ul>
-        </div>
-        <div class="grid-item-footer">
-            <h5>Assistance</h5>
-            <ul>
-                <li><a href="">Centre d'aide</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
-        </div>
+    <div class="grid-item-footer">
+        <h5>A propos</h5>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions gégérales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div class="grid-item-footer">
+        <h5>Nos hébergements</h5>
+        <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+    </div>
+    <div class="grid-item-footer">
+        <h5>Assistance</h5>
+        <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
     </div>
 </footer>
 </body>
