@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import "grid.css";
 @import "variables.css";
 @import "style.css";
 @import "responsive.css";
