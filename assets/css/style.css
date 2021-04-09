@@ -1,91 +1,3 @@
-body {
-    margin: 0;
-    font-family: Raleway, serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.float-right {
-    float: right;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-header, main {
-    margin: 0 30px 0 30px;
-}
-
-input:focus, button:focus {
-    outline: none;
-}
-
-/* MENU */
-#register {
-    font-weight: 700;
-    color: var(--blue);
-}
-
-#actif a {
-    color: var(--blue);
-}
-
-#actif {
-    border-top: 2px solid var(--blue);
-}
-
-header img {
-    width: 100px;
-    position: relative;
-    top: 6px;
-}
-
-header ul {
-    list-style: none;
-    margin: 0;
-}
-
-header ul li {
-    padding: 20px;
-    transition: var(--tr02);
-    border-top: 2px solid transparent;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav :nth-child(1) {
-    order: 1;
-}
-
-.nav :nth-child(2) {
-    order: 2;
-}
-
-.nav :nth-child(3) {
-    order: 3;
-}
-
-header ul a {
-    color: gray;
-    text-decoration: none;
-}
-
-header ul a:hover {
-    color: var(--blue);
-    transition: var(--tr02);
-}
-
-header ul li:hover {
-    border-top: 2px solid var(--blue);
-    transition: var(--tr02);
-}
-
 /* Filtres */
 
 .container-filter {
@@ -156,19 +68,19 @@ header ul li:hover {
     font-weight: bold;
 }
 
-.filter a {
+.filter button {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 20px;
-    padding: 10px 15px 10px 55px;
+    margin: 20px 0 5px 0;
+    padding: 13px 15px 10px 55px;
     border-radius: 20px;
     position: relative;
     background-color: transparent;
     border: 1px solid var(--dark-gray);
 }
 
-.filter a .circle {
+.filter button .circle {
     position: absolute;
     background-color: rgb(195, 213, 241);
     border-radius: 100%;
@@ -179,10 +91,10 @@ header ul li:hover {
     height: 40px;
 }
 
-.filter a .circle i {
+.filter button .circle i {
     position: absolute;
-    top: 12px;
-    left: 9px;
+    top: 14px;
+    left: 11px;
 }
 
 #circle-info {
@@ -312,6 +224,10 @@ h2 {
 }
 
 /* Activity */
+figure {
+    margin: 0;
+}
+
 .container-activity {
     margin-top: 50px;
     grid-column: 1/6;
@@ -341,33 +257,4 @@ h2 {
     height: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-}
-
-/* Footer */
-footer {
-    background-color: var(--background);
-    display: grid;
-    grid-gap: 30px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 30%);
-}
-
-footer h5 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    padding: 5px;
-}
-
-footer li a {
-    color: black;
-    text-decoration: none;
 }
