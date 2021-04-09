@@ -1,10 +1,132 @@
 /* Responsive
-sm: 540px;
-md: 720px;
-lg: 960px;
-xl: 1200px;
+sm: 570px; Petit tel
+md: 720px; Tel
+lg: 1000px; Tablette
+xl: 1250px; Ordi
 */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1250px){
 
+    /* Housing & Popular */
+    .item-housing {
+        flex: 1 1 40%;
+    }
+
+    .housing-title {
+        font-size: 1em;
+    }
+
+    .item-popular .housing-desc {
+        font-size: 0.9em;
+    }
+
+    .img-item-popular, .popular-content-text {
+        width: 45%;
+    }
+
+
+    /* Activity */
+    .grid-container {
+        grid-template-areas: "activity-one-big activity-one-big activity-one-small activity-two-big"
+                             "activity-three-small activity-two-small activity-two-small activity-four-small";
+    }
+
+    .activity-one-small {
+        height: 100%;
+    }
+
+    .activity-two-small {
+        position: relative;
+        height: 100%;
+    }
+
+    .activity-two-big {
+        height: 100%;
+    }
+
+    .activity-three-small {
+        height: 100%;
+    }
+
+    .activity-four-small {
+        position: relative;
+        height: 100%;
+    }
+
+    .activity-img, .activity-img-small{
+        height: 76%;
+    }
+
+    .activity-title {
+        font-size: initial;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        margin: 0;
+    }
+
+    /* Housing & Popular */
+    .grid-template-housing {
+        grid-template-areas: "popular popular"
+                             "housing housing";
+    }
+
+    .item-popular {
+        width: 100%;
+    }
+
+    .housing {
+        grid-area: housing;
+        background-color: transparent;
+    }
+
+    .popular {
+        border-radius: 0;
+        grid-area: popular;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .item-housing {
+        flex: 1 1 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-template-areas: "activity-one-big"
+                            "activity-one-small"
+                            "activity-two-big"
+                            "activity-three-small"
+                            "activity-two-small"
+                            "activity-four-small";
+    }
+
+    footer {
+        grid-template-columns: repeat(auto-fill, 100%);
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    /* Nav */
+    .nav :nth-child(1) {
+        display: block;
+        order: 2;
+    }
+
+    .nav :nth-child(2) {
+        display: block;
+        order: 3;
+    }
+
+    .nav :nth-child(3) {
+        order: 1;
+    }
 }
