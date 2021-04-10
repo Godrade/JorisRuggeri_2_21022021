@@ -1,5 +1,4 @@
-/* Filtres */
-
+/* Filter */
 .container-filter {
     margin-top: 30px;
 }
@@ -72,8 +71,8 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
-    margin: 20px 0 5px 0;
-    padding: 13px 15px 10px 55px;
+    margin: 0 20px 5px 0;
+    padding: 13px 15px 10px 45px;
     border-radius: 20px;
     position: relative;
     background-color: transparent;
@@ -114,8 +113,7 @@
     top: 5px;
 }
 
-/* Logement */
-
+/* Housing */
 h2 {
     font-weight: bold;
     font-size: 1.4em;
@@ -187,7 +185,12 @@ h2 {
     color: var(--background);
 }
 
-/* Plus populaire */
+/* Popular */
+.icon-housing-popular {
+    position: relative;
+    top: 15px;
+}
+
 .item-popular {
     margin: 10px;
     height: 190px;
@@ -236,7 +239,7 @@ figure {
 
 .activity-title {
     font-weight: bold;
-    padding-left: 20px;
+    padding: 20px 0 20px 20px;
     font-size: 1.2em;
 }
 

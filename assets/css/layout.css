@@ -23,6 +23,15 @@ input:focus, button:focus {
     outline: none;
 }
 
+input {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
 /* MENU */
 #register {
     font-weight: 700;
@@ -45,6 +54,8 @@ header img {
 
 header ul {
     list-style: none;
+    float: right;
+    padding: 0;
     margin: 0;
 }
 
@@ -56,19 +67,6 @@ header ul li {
 
 .nav {
     display: flex;
-    flex-direction: row;
-}
-
-.nav :nth-child(1) {
-    order: 1;
-}
-
-.nav :nth-child(2) {
-    order: 2;
-}
-
-.nav :nth-child(3) {
-    order: 3;
 }
 
 header ul a {

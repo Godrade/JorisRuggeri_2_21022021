@@ -17,7 +17,9 @@
 <header>
     <nav>
         <img src="assets/images/logo/Reservia.svg" alt="Logo Reservia">
-        <a href="#" id="register">S'inscrire</a>
+        <ul class="register">
+            <li><a href="#" id="register">S'inscrire</a></li>
+        </ul>
         <ul class="nav">
             <li id="actif"><a href="#housing">Hébergements</a></li>
             <li><a href="#activity">Activités</a></li>
@@ -32,8 +34,11 @@
         <div class="select-city">
             <form>
                 <div>
-                    <label class="before-input" for="search-city"><i class="fas fa-map-marker-alt"></i>
-                    <input type="search" placeholder="Ville" value="Marseille, France" id="search-city">
+                    <label for="search-city">
+                        <span class="before-input">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <input type="search" placeholder="Ville" value="Marseille, France" id="search-city">
                     </label>
                     <button type="submit">Recherche</button>
                 </div>
@@ -178,7 +183,7 @@
         </div>
         <div class="container-housing popular">
             <h2 class="inline-block">Les plus populaires</h2>
-            <i class="fas fa-chart-line fa-2x float-right"></i>
+            <i class="fas fa-chart-line fa-2x float-right icon-housing-popular"></i>
             <div class="list-housing">
                 <article class="item-popular">
                     <div class="img-item-popular">

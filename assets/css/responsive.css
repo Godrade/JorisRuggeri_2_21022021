@@ -103,30 +103,66 @@ xl: 1250px; Ordi
 
 @media screen and (max-width: 720px) {
 
+    header {
+        margin: 0;
+    }
+
+    /* Menu */
+    .register {
+        float: right;
+    }
+
+    .register li {
+        border-bottom: none;
+        border-top: 2px solid transparent;
+    }
+
+    #actif {
+        border-top: none;
+        border-bottom: 2px solid var(--blue);
+    }
+
+    nav img {
+        margin-left: 30px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    header ul {
+        float: none;
+        padding: 0;
+    }
+
+    .nav li {
+        padding: 20px;
+        transition: var(--tr02);
+        border-top: none;
+        width: 49%;
+        text-align: center;
+        border-bottom: 2px solid var(--background);
+    }
+
+    .nav li:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--blue);
+    }
+
+    /* City & Filter*/
+    .container-filter {
+        margin: 20px 30px 0 30px;
+    }
+
+    /* Housing */
     .item-housing {
         flex: 1 1 100%;
     }
 
+    /* Footer */
     footer {
         grid-template-columns: repeat(auto-fill, 100%);
         padding-left: 30px;
     }
 
-}
-
-@media screen and (max-width: 570px){
-    /* Nav */
-    .nav :nth-child(1) {
-        display: block;
-        order: 2;
-    }
-
-    .nav :nth-child(2) {
-        display: block;
-        order: 3;
-    }
-
-    .nav :nth-child(3) {
-        order: 1;
-    }
 }
