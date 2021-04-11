@@ -31,24 +31,11 @@ xl: 1250px; Ordi
                              "activity-three-small activity-two-small activity-two-small activity-four-small";
     }
 
-    .activity-one-small {
+    .activity-one-small, .activity-two-big, .activity-three-small {
         height: 100%;
     }
 
-    .activity-two-small {
-        position: relative;
-        height: 100%;
-    }
-
-    .activity-two-big {
-        height: 100%;
-    }
-
-    .activity-three-small {
-        height: 100%;
-    }
-
-    .activity-four-small {
+    .activity-two-small, .activity-four-small {
         position: relative;
         height: 100%;
     }
@@ -151,7 +138,36 @@ xl: 1250px; Ordi
 
     /* City & Filter*/
     .container-filter {
-        margin: 20px 30px 0 30px;
+        margin: 20px 20px 0 30px;
+    }
+
+    .container-text-filter h1 {
+        font-size: 1.2em;
+    }
+
+    .searchIcon {
+        display: block;
+    }
+
+    .searchText {
+        display: none;
+    }
+
+    .select-city button {
+        right: 20px;
+        border-radius: 10px;
+    }
+
+    #circle-info {
+        top: 6px;
+        height: 20px;
+        width: 20px;
+    }
+
+    #circle-info i {
+        right: 8px;
+        top: 4px;
+        font-size: 12px;
     }
 
     /* Housing */
