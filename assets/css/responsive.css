@@ -62,10 +62,6 @@ xl: 1250px; Ordi
                              "housing housing";
     }
 
-    .item-popular {
-        width: 100%;
-    }
-
     .housing {
         grid-area: housing;
         background-color: transparent;
