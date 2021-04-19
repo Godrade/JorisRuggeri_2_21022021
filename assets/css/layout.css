@@ -29,8 +29,8 @@ input:focus, button:focus {
 }
 
 input {
-    box-shadow: none;
-    border-radius: 0;
+    background-color: transparent;
+    color: black;
 }
 
 button {
